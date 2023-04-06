@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("/Background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* background: hsla(212, 13%, 41%, 1);
+
+background: linear-gradient(180deg, hsla(212, 13%, 41%, 1) 0%, hsla(3, 100%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(212, 13%, 41%, 1) 0%, hsla(3, 100%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(212, 13%, 41%, 1) 0%, hsla(3, 100%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5A6776", endColorstr="#FF7B74", GradientType=1 ); */
+}
+.Glassmorphism {
+    @apply shadow-[0_4px_40px_rgba(0,0,0,0.1)] backdrop-blur-[5px] border rounded-2xl border-solid border-[rgba(255,255,255,0.3)];
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+}
